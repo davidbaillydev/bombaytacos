@@ -248,7 +248,7 @@ a:focus {
 }
 
 .user_option .order_online:hover {
-  background-color: #D22228;
+  background-color: #90171b;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -342,7 +342,7 @@ a:focus {
 }
 
 .slider_section .detail-box h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -364,7 +364,7 @@ a:focus {
 }
 
 .slider_section .detail-box a:hover {
-  background-color: #D22228;
+  background-color: #90171b;
 }
 
 .slider_section .img-box img {
@@ -462,7 +462,7 @@ a:focus {
 }
 
 .offer_section .box .detail-box a:hover {
-  background-color: #D22228;
+  background-color: #90171b;
 }
 
 .offer_section .box .detail-box a svg {
@@ -611,7 +611,7 @@ a:focus {
 }
 
 .food_section .btn-box a:hover {
-  background-color: #D22228;
+  background-color: #90171b;
 }
 
 .about_section {
@@ -659,7 +659,7 @@ a:focus {
 }
 
 .about_section .detail-box a:hover {
-  background-color: #D22228;
+  background-color: #90171b;
 }
 
 .book_section {
@@ -720,7 +720,7 @@ a:focus {
 }
 
 .book_section .form_container button:hover {
-  background-color: #D22228;
+  background-color: #90171b;
 }
 
 .book_section .map_container {
@@ -895,7 +895,7 @@ a:focus {
 }
 
 .contact_section .form_container button:hover {
-  background-color: #D22228;
+  background-color: #90171b;
 }
 
 /* footer section*/
