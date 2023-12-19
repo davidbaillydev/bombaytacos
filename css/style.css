@@ -92,7 +92,7 @@ a:focus {
 /*header section*/
 .hero_area {
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,7 +176,8 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #D22228;
+  /* color: #D22228; */
+  color: #FC7311;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -189,7 +190,8 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn:hover {
-  color: #D22228;
+  /* color: #D22228; */
+  color: #FC7311;
 }
 
 .user_option {
@@ -210,7 +212,8 @@ a:focus {
 }
 
 .user_option .user_link:hover {
-  color: #D22228;
+  /* color: #D22228; */
+  color: #FC7311;
 }
 
 .user_option .cart_link {
@@ -233,13 +236,15 @@ a:focus {
 }
 
 .user_option .cart_link:hover svg {
-  fill: #D22228;
+  /* fill: #D22228; */
+  fill: #FC7311;
 }
 
 .user_option .order_online {
   display: inline-block;
   padding: 8px 30px;
-  background-color: #D22228;
+  /* background-color: #D22228; */
+  background-color: #FC7311;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -342,9 +347,9 @@ a:focus {
 }
 
 .slider_section .detail-box h1 {
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .slider_section .detail-box p {
@@ -354,7 +359,8 @@ a:focus {
 .slider_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #D22228;
+  /* background-color: #D22228; */
+  background-color: #FC7311;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -393,7 +399,8 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #D22228;
+  /* background-color: #D22228; */
+  background-color: #FC7311;
 }
 
 .offer_section {
@@ -424,7 +431,7 @@ a:focus {
   -webkit-transition: all 0.1 0.5s;
   transition: all 0.1 0.5s;
   border-radius: 100%;
-  border: 5px solid #D22228;
+  border: 5px solid #FC7311;
   overflow: hidden;
 }
 
@@ -453,7 +460,7 @@ a:focus {
 .offer_section .box .detail-box a {
   display: inline-block;
   padding: 10px 30px;
-  background-color: #D22228;
+  background-color: #FC7311;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
