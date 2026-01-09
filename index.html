@@ -164,6 +164,33 @@
           </div>
         </nav>
       </div>
+
+      <button onclick="document.getElementById('game-popup-overlay').style.display='flex'" style="padding: 15px 25px; background: #ffcc00; color: #1a1a1a; font-weight: bold; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+  🎁 Tentez de gagner un lot !
+</button>
+
+<div id="game-popup-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:99999; justify-content:center; align-items:center; backdrop-filter: blur(8px); padding: 20px;">
+    
+    <div style="position:relative; width:100%; max-width:400px; height:600px; background:transparent;">
+        
+        <button onclick="document.getElementById('game-popup-overlay').style.display='none'" 
+                style="position:absolute; top:-15px; right:-15px; z-index:100001; background:#ffcc00; color:#1a1a1a; border:none; border-radius:50%; width:35px; height:35px; cursor:pointer; font-size:20px; font-weight:bold; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display:flex; justify-content:center; align-items:center;">
+          ✕
+         </button>
+      <iframe 
+        src="https://restaurantgame.netlify.app/?name=Indian+Food+Blagnac&logo=https://indianfoodblagnac.com/images/logo.png&google=https://g.page/r/CcLlEdzGuFqeEAE/review&insta=https://www.instagram.com/indianfoodblagnac/&fb=https://www.facebook.com/indianfoodblagnac" 
+        style="width:100%; height:100%; border:none; border-radius:25px; background: transparent;"
+        allow="clipboard-write">
+    </iframe>
+    </div>
+</div>
+
+
+
+
+
+
+
     </header>
     <!-- end header section -->
     <!-- slider section -->
@@ -2967,6 +2994,20 @@ Découvrez notre menu riche et diversifié, mettant en avant des plats indiens a
   <!-- End Google Map -->
   <!-- <script type="text/javascript" src="//cookie.eurowebpage.com/cookie.js?skin=cookielaw2&amp;box_radius=25&amp;delay=6&amp;animation=shake&amp;bg_color=151414&amp;morelink=https%3A%2F%2Fwww.bombaytacosblagnac.fr%2Fprivacy&amp;link_color=f62500&amp;accept_background=fb3232&amp;accept_color=fefefe&amp;accept_radius=20&amp;learnmore=%20Mentions%20l%C3%A9gales%20%26%20Protection%20de%20donn%C3%A9es&amp;msg=En%20continuant%20%C3%A0%20naviguer%20sur%20ce%20site%2C%20vous%20acceptez%20l'utilisation%20de%20cookies%2C%20vous%20pouvez%20toujours%20demander%20qu'ils%20soient%20d%C3%A9sactiv%C3%A9s."></script> -->
     
+
+  <script>
+    function openGamePopup() {
+        var popup = document.getElementById('game-popup-overlay');
+        if(popup) {
+            popup.style.display = 'flex';
+        }
+    }
+
+    // Lance la popup 3 secondes après que tout soit prêt
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(openGamePopup, 3000);
+    });
+</script>
 </body>
 
   </html>
