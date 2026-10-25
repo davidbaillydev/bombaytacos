@@ -1,6 +1,6 @@
 $white: #ffffff;
 $black: #000000;
-$primary1: #D22228;
+$primary1: #d4a017;
 $primary2: #222831;
 $textCol: #1f1f1f;
 
@@ -180,9 +180,19 @@ a:focus {
 
 .custom_nav-container {
   padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .navbar-collapse {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   .navbar-nav {
-    padding-left: 18%;
+    padding-left: 0;
 
     .nav-item {
       .nav-link {
@@ -191,6 +201,7 @@ a:focus {
         text-align: center;
         text-transform: uppercase;
         border-radius: 5px;
+        white-space: nowrap;
         transition: all 0.3s;
       }
 
@@ -204,19 +215,6 @@ a:focus {
   }
 }
 
-.custom_nav-container .nav_search-btn {
-  width: auto;
-  height: auto;
-  padding: 0;
-  border: none;
-  color: $white;
-  margin: 0 10px;
-
-  &:hover {
-    color: $primary1;
-  }
-}
-
 .user_option {
   display: flex;
   align-items: center;
@@ -225,93 +223,8 @@ a:focus {
     margin: 0 10px;
   }
 
-  .user_link {
-    color: $white;
-
-
-    &:hover {
-      color: $primary1;
-
-    }
-  }
-
-  .cart_link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    svg {
-      width: 17px;
-      height: auto;
-      fill: $white;
-      margin-bottom: 2px;
-    }
-
-    &:hover {
-
-      svg {
-        fill: $primary1;
-      }
-    }
-  }
-
   .order_online {
     @include hero_btn($primary1, $white, 8px, 30px, 45px);
-  }
-}
-
-.custom_nav-container .navbar-toggler {
-  outline: none;
-}
-
-.custom_nav-container .navbar-toggler {
-  padding: 0;
-  width: 37px;
-  height: 42px;
-  transition: all 0.3s;
-
-  span {
-    display: block;
-    width: 35px;
-    height: 4px;
-    background-color: $white;
-    margin: 7px 0;
-    transition: all 0.3s;
-    position: relative;
-    border-radius: 5px;
-    transition: all 0.3s;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: $white;
-      top: -10px;
-      border-radius: 5px;
-      transition: all 0.3s;
-    }
-
-    &::after {
-      top: 10px;
-    }
-  }
-
-  &[aria-expanded="true"] {
-    transform: rotate(360deg);
-
-    span {
-      transform: rotate(45deg);
-
-      &::before,
-      &::after {
-        transform: rotate(90deg);
-        top: 0;
-      }
-    }
-
   }
 }
 
@@ -535,23 +448,7 @@ a:focus {
 
     .options {
       display: flex;
-      justify-content: space-between;
-
-      a {
-        width: 40px;
-        height: 40px;
-        border-radius: 100%;
-        background: $primary1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        svg {
-          width: 18px;
-          height: auto;
-          fill: $white;
-        }
-      }
+      justify-content: flex-start;
     }
 
     &:hover {

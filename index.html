@@ -22,7 +22,7 @@
   <meta name="Author" content="lcdigitale">
   <meta name="google-site-verification" content="shFtVEOoY6JFYFDbgbvJws0exEyU4Ex1aGiHF5lNzEQ" /> 
 
-  <title> Indian Food Corner 🥘 Home| BLAGNAC </title>
+  <title>Indian Food Corner | Restaurant indien à Blagnac</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -66,31 +66,22 @@
     <!-- header section strats -->
     <header class="header_section">
       <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
-            <!-- <span>
-              Bombay Tacos
-            </span> -->
-            <img src="images/logo.png"  height="150"  alt="">
+            <img src="images/logo.png" height="100" alt="Indian Food Corner">
           </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  mx-auto ">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+          <div class="navbar-collapse">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item active"><a class="nav-link" href="#accueil">Accueil</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
+                <a class="nav-link" href="#apropos">À propos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">A Propos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
             <div class="user_option">
@@ -106,7 +97,7 @@
     </header>
     <!-- end header section -->
     <!-- slider section -->
-    <section class="slider_section ">
+    <section class="slider_section" id="accueil">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -320,7 +311,7 @@
 
    <!-- food section -->
 
-   <section class="food_section layout_padding-bottom">
+   <section class="food_section layout_padding-bottom" id="menu">
     <div>
       <br><br>
     </div>
@@ -1007,7 +998,7 @@
 
   <!-- about section -->
 
-  <section class="about_section layout_padding">
+  <section class="about_section layout_padding" id="apropos">
     <div class="container  ">
 
       <div class="row">
@@ -1037,6 +1028,34 @@ Découvrez notre menu riche et diversifié, mettant en avant des plats indiens a
   </section>
 
   <!-- end about section -->
+
+  <section class="book_section layout_padding" id="contact">
+    <div class="container">
+      <div class="heading_container">
+        <h2>Contact</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form_container">
+            <form action="https://formsubmit.co/ifc@lcdigitale.fr" method="POST">
+              <div>
+                <input type="text" class="form-control" placeholder="Nom" name="Nom" required />
+              </div>
+              <div>
+                <input type="email" class="form-control" placeholder="Email" name="Email" required />
+              </div>
+              <div>
+                <textarea cols="30" rows="7" class="form-control" placeholder="Message" name="message" required></textarea>
+              </div>
+              <div class="btn_box">
+                <button type="submit">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- book section -->
   <!-- <section class="book_section layout_padding">
@@ -1228,7 +1247,7 @@ Découvrez notre menu riche et diversifié, mettant en avant des plats indiens a
       <div class="footer-info">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Indian Food Corner</a><br><br>
+          <a href="#accueil">Indian Food Corner</a><br><br>
           &copy; <span id="displayYear"></span> Deployer par 
           <a href="https://lcdigitale.fr/" target="_blank">lcdigitale web agency </a>
         </p>
