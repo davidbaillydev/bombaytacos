@@ -189,8 +189,20 @@ a:focus {
 }
 
 .hero_area .navbar-brand img {
-  max-width: 190px;
+  display: block;
+  width: 84px;
+  max-width: 100%;
   height: auto;
+}
+
+.hero_area .navbar-brand {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.hero_area .custom_nav-container {
+  justify-content: center;
 }
 
 .sub_page .hero_area {

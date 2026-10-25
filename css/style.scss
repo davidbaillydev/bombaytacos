@@ -181,7 +181,7 @@ a:focus {
 .custom_nav-container {
   padding: 0;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 
   .navbar-collapse {
     display: flex;
@@ -211,6 +211,21 @@ a:focus {
           color: $primary1;
         }
       }
+    }
+  }
+}
+
+.hero_area {
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    img {
+      display: block;
+      width: 84px;
+      max-width: 100%;
+      height: auto;
     }
   }
 }
