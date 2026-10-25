@@ -179,8 +179,9 @@ a:focus {
 }
 
 .hero_area > .slider_section .detail-box h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  margin-bottom: 20px;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.15;
+  margin-bottom: 14px;
 }
 
 .hero_area > .slider_section .carousel-indicators {
