@@ -4,7 +4,8 @@
 
 @media (max-width: 992px) {
   .hero_area {
-    min-height: 75vh;
+    height: 65vh;
+    min-height: 460px;
   }
 
   .custom_nav-container .navbar-nav {
@@ -38,7 +39,8 @@
 
 @media (max-width: 767px) {
   .hero_area {
-    min-height: 70vh;
+    height: 58vh;
+    min-height: 400px;
   }
 
   .hero_area > header {
@@ -53,6 +55,10 @@
     margin: 0 12px 45px;
     padding: 20px;
     background: rgba(18, 20, 27, 0.78);
+  }
+
+  .hero_area > .slider_section .detail-box h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
   }
 
   .about_section .detail-box,
